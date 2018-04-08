@@ -32,6 +32,18 @@ class RegistrationForm(FlaskForm):
             raise ValidationError('Please use a different email address.')
 
 
+class RestPasswordRequestForm(FlaskForm):
+    email = StringField('Email', validators=[DataRequired(), Email()])
+    submit = SubmitField('重置密码')
+
+
+class ResetPasswordForm(FlaskForm):
+    password = PasswordField('密码', validators=[DataRequired()])
+    password2 = PasswordField(
+        '重复密码', validators=[DataRequired(), EqualTo('password')])
+    submit = SubmitField('重置密码')
+
+
 class EditProfileForm(FlaskForm):
     username = StringField('用户名', validators=[DataRequired()])
     about_me = TextAreaField('关于我', validators=[Length(min=0, max=140)])
@@ -49,5 +61,6 @@ class EditProfileForm(FlaskForm):
 
 
 class PostForm(FlaskForm):
-    post = TextAreaField('说点什么吧：', validators=[DataRequired])
+    post = TextAreaField('说点什么吧：', validators=[
+        DataRequired(), Length(min=1, max=140)])
     submit = SubmitField('发布')
