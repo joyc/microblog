@@ -1,3 +1,4 @@
+from flask import request
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import ValidationError, DataRequired, Length
@@ -24,3 +25,14 @@ class EditProfileForm(FlaskForm):
 class PostForm(FlaskForm):
     post = TextAreaField(_l('说点什么吧：'), validators=[DataRequired()])
     submit = SubmitField(_l('发布'))
+
+
+class SearchForm(FlaskForm):
+    q = StringField(_l('搜索'), validators=[DataRequired()])
+    
+    def __init__(self, *args, **kwargs):
+        if 'formdata' not in kwargs:
+            kwargs['formdata'] = request.args
+        if 'csrf_enabled' not in kwargs:
+            kwargs['csrf_enabled'] = False
+        super(SearchForm, self).__init__(*args, **kwargs)

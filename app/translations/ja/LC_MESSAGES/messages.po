@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-12 01:35+0900\n"
+"POT-Creation-Date: 2018-04-15 23:42+0900\n"
 "PO-Revision-Date: 2018-04-10 23:41+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -18,154 +18,150 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
 
-#: app/__init__.py:23
+#: app/__init__.py:20
 msgid "请登录后浏览此页面."
-msgstr "このページを表示するにはログインしてください"
+msgstr "このページを表示するにはログインしてください。"
 
-#: app/forms.py:11 app/forms.py:18 app/forms.py:49
+#: app/translate.py:10
+msgid "错误：翻译服务未配置。"
+msgstr "エラー：翻訳サービスが設定されていません。"
+
+#: app/translate.py:17
+msgid "错误：翻译服务失败。"
+msgstr "エラー：翻訳サービスに失敗しました。"
+
+#: app/auth/email.py:8
+msgid "[有态度-Microblog] 密码重置"
+msgstr "パスワードリセット"
+
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:10
 msgid "用户名"
 msgstr "ユーザー名"
 
-#: app/forms.py:12 app/forms.py:20 app/forms.py:42
+#: app/auth/forms.py:10 app/auth/forms.py:18 app/auth/forms.py:40
 msgid "密码"
 msgstr "パスワード"
 
-#: app/forms.py:13
+#: app/auth/forms.py:11
 msgid "记住"
 msgstr "記憶する"
 
-#: app/forms.py:14 app/routes.py:78
+#: app/auth/forms.py:12 app/auth/routes.py:27
 msgid "登入"
 msgstr "ログイン"
 
-#: app/forms.py:19 app/forms.py:37
+#: app/auth/forms.py:17 app/auth/forms.py:35
 msgid "Email"
 msgstr "Email"
 
-#: app/forms.py:22 app/forms.py:44
+#: app/auth/forms.py:20 app/auth/forms.py:42
 msgid "重复密码"
 msgstr "もう一度"
 
-#: app/forms.py:23
+#: app/auth/forms.py:21
 msgid "申请"
 msgstr "申請"
 
-#: app/forms.py:28
+#: app/auth/forms.py:26
 msgid "已有重复，请更换."
 msgstr "もう一度やり直してください。"
 
-#: app/forms.py:33
+#: app/auth/forms.py:31
 msgid "邮件已使用，请更换."
 msgstr "メールが使用されました。交換してください。"
 
-#: app/forms.py:38 app/forms.py:45 app/routes.py:114
-#: app/templates/reset_passowrd.html:5
-#: app/templates/reset_password_request.html:5
+#: app/auth/forms.py:36 app/auth/forms.py:43 app/auth/routes.py:63
+#: app/templates/auth/reset_passowrd.html:5
+#: app/templates/auth/reset_password_request.html:5
 msgid "重置密码"
 msgstr "パスワードをリセットする"
 
-#: app/forms.py:50
-msgid "关于我"
-msgstr "自己紹介"
-
-#: app/forms.py:51
-msgid "提交"
-msgstr "送信"
-
-#: app/forms.py:61
-msgid "用户名重复，请换一个试试"
-msgstr "ユーザー名が重複して、別を試してください。"
-
-#: app/forms.py:65
-msgid "说点什么吧："
-msgstr "何か言って："
-
-#: app/forms.py:67
-msgid "发布"
-msgstr "リリース"
-
-#: app/routes.py:35
-msgid "你的消息已经发布!"
-msgstr "呟きを公開されました！"
-
-#: app/routes.py:44 app/templates/base.html:25
-msgid "首页"
-msgstr "ホームページ"
-
-#: app/routes.py:59 app/templates/base.html:26
-msgid "探索"
-msgstr "発見"
-
-#: app/routes.py:71
+#: app/auth/routes.py:20
 msgid "用户名或密码错误"
 msgstr "ユーザー名またはパスワードが正しくありません"
 
-#: app/routes.py:97
+#: app/auth/routes.py:46
 msgid "恭喜您注册成功!"
 msgstr "登録成功"
 
-#: app/routes.py:99 app/templates/register.html:5
+#: app/auth/routes.py:48 app/templates/auth/register.html:5
 msgid "注册"
 msgstr "登録"
 
-#: app/routes.py:111
+#: app/auth/routes.py:60
 msgid "查看您的电子邮件以获取重置密码的说明"
 msgstr "メールを確認してください"
 
-#: app/routes.py:128
+#: app/auth/routes.py:77
 msgid "密码重置成功！"
 msgstr "パスワードリセット成功"
 
-#: app/routes.py:161
+#: app/main/forms.py:11
+msgid "关于我"
+msgstr "自己紹介"
+
+#: app/main/forms.py:12
+msgid "提交"
+msgstr "送信"
+
+#: app/main/forms.py:22
+msgid "用户名重复，请换一个试试"
+msgstr "ユーザー名が重複して、別を試してください。"
+
+#: app/main/forms.py:26
+msgid "说点什么吧："
+msgstr "何か言って："
+
+#: app/main/forms.py:27
+msgid "发布"
+msgstr "リリース"
+
+#: app/main/forms.py:31 app/main/routes.py:147
+msgid "搜索"
+msgstr "検索"
+
+#: app/main/routes.py:35
+msgid "你的消息已经发布!"
+msgstr "呟きを公開されました！"
+
+#: app/main/routes.py:44
+msgid "首页"
+msgstr "ホームページ"
+
+#: app/main/routes.py:59
+msgid "探索"
+msgstr "発見"
+
+#: app/main/routes.py:86
+msgid "你的修改已被保存。"
+msgstr "変更が保存されました"
+
+#: app/main/routes.py:91
 msgid "编辑档案"
 msgstr "資料編集"
 
-#: app/routes.py:170
+#: app/main/routes.py:100
 #, python-format
 msgid "没有找到用户 %(username)s."
 msgstr "ユーザー %(username)s 見つからず"
 
-#: app/routes.py:173
+#: app/main/routes.py:103
 msgid "你丫也太自恋了吧，咋能粉自己呢!"
 msgstr "自分にフォローすることができない"
 
-#: app/routes.py:186
+#: app/main/routes.py:116
 #, python-format
 msgid "没找到用户 %(username)s."
 msgstr "ユーザー %(username)s 見つからず．"
 
-#: app/routes.py:189
+#: app/main/routes.py:119
 msgid "你还想取关你自己？"
 msgstr "操作できない"
 
-#: app/routes.py:193
+#: app/main/routes.py:123
 #, python-format
 msgid "你没在关注 %(username)s."
 msgstr "你没在关注 %(username)s."
-
-#: app/translate.py:10
-msgid "错误：翻译服务未配置。"
-msgstr ""
-
-#: app/translate.py:17
-msgid "错误：翻译服务失败。"
-msgstr ""
-
-#: app/templates/404.html:4
-msgid "页面没找到"
-msgstr "ページが見つかりません"
-
-#: app/templates/404.html:5 app/templates/500.html:6
-msgid "后退"
-msgstr "戻る"
-
-#: app/templates/500.html:4
-msgid "发生意外的错误"
-msgstr "意外なエラー"
-
-#: app/templates/500.html:5
-msgid "抱歉给你带来不便，管理员已收到通知。"
-msgstr "ご迷惑をおかけして申し訳ありません。管理者は通知を受け取りました。"
 
 #: app/templates/_post.html:14
 #, python-format
@@ -173,32 +169,8 @@ msgid "%(username)s 于 %(when)s 说道:"
 msgstr "%(username)s 于 %(when)s 言った："
 
 #: app/templates/_post.html:25
-msgid "Translate"
-msgstr ""
-
-#: app/templates/base.html:7
-msgid "欢迎光临有态度的微言微语"
-msgstr "いらしゃいませ"
-
-#: app/templates/base.html:21
-msgid "微言"
-msgstr "小言"
-
-#: app/templates/base.html:30 app/templates/login.html:5
-msgid "登录"
-msgstr "ログイン"
-
-#: app/templates/base.html:32
-msgid "档案"
-msgstr "資料"
-
-#: app/templates/base.html:33
-msgid "退出"
-msgstr "ログアウト"
-
-#: app/templates/base.html:70
-msgid "错误：无法连接服务器。"
-msgstr ""
+msgid "点击翻译"
+msgstr "翻訳"
 
 #: app/templates/edit_profile.html:5
 msgid "编辑资料"
@@ -217,21 +189,17 @@ msgstr "新しい"
 msgid "旧语"
 msgstr "旧い"
 
-#: app/templates/login.html:12
-msgid "新用户?"
-msgstr "新メンバー?"
+#: app/templates/search.html:4
+msgid "搜索结果"
+msgstr "検索結果"
 
-#: app/templates/login.html:12
-msgid "请注册!"
-msgstr "登録してください!"
+#: app/templates/search.html:13
+msgid "以前的结果"
+msgstr "以前の結果"
 
-#: app/templates/login.html:14
-msgid "忘记密码？"
-msgstr "パスワード忘れ"
-
-#: app/templates/login.html:15
-msgid "点此重置"
-msgstr "パスワードリセット"
+#: app/templates/search.html:18
+msgid "下一个结果"
+msgstr "次の結果"
 
 #: app/templates/user.html:8
 msgid "账号"
@@ -262,4 +230,58 @@ msgstr "フォロー"
 #: app/templates/user.html:18
 msgid "取关"
 msgstr "アンフォロー"
+
+#: app/templates/auth/login.html:5
+msgid "登录"
+msgstr "ログイン"
+
+#: app/templates/auth/login.html:12
+msgid "新用户?"
+msgstr "新メンバー?"
+
+#: app/templates/auth/login.html:12
+msgid "请注册!"
+msgstr "登録してください!"
+
+#: app/templates/auth/login.html:14
+msgid "忘记密码？"
+msgstr "パスワード忘れ"
+
+#: app/templates/auth/login.html:15
+msgid "点此重置"
+msgstr "パスワードリセット"
+
+#: app/templates/errors/404.html:4
+msgid "页面没找到"
+msgstr "ページが見つかりません"
+
+#: app/templates/errors/404.html:5 app/templates/errors/500.html:6
+msgid "后退"
+msgstr "戻る"
+
+#: app/templates/errors/500.html:4
+msgid "发生意外的错误"
+msgstr "意外なエラー"
+
+#: app/templates/errors/500.html:5
+msgid "抱歉给你带来不便，管理员已收到通知。"
+msgstr "ご迷惑をおかけして申し訳ありません。管理者は通知を受け取りました。"
+
+#~ msgid "Translate"
+#~ msgstr ""
+
+#~ msgid "欢迎光临有态度的微言微语"
+#~ msgstr "いらしゃいませ"
+
+#~ msgid "微言"
+#~ msgstr "小言"
+
+#~ msgid "档案"
+#~ msgstr "資料"
+
+#~ msgid "退出"
+#~ msgstr "ログアウト"
+
+#~ msgid "错误：无法连接服务器。"
+#~ msgstr ""
 
